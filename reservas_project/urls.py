@@ -29,5 +29,6 @@ router.register(r'hoteles', HotelViewSet)
 urlpatterns = [
     path('', include(router.urls)),
     path('custom-api/', CustomAPIView.as_view()),
+    path('admin/', admin.site.urls),
 ]
 
